@@ -1,0 +1,41 @@
+.messageBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.firstBlock{
+    display: flex;
+    flex-direction: column;
+}
+.secondBlock {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.time{
+    margin-left: 40px;
+}
+.secondBlock:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 37px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 13px solid black;
+    border-bottom: 12px solid transparent;
+}
+.homeworks{
+    text-align: center;
+}
