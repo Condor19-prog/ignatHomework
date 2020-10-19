@@ -7,12 +7,23 @@ import HW4 from "../../h4/HW4";
 function PreJunior() {
     return (
         <div>
-            <HW1/>
-            <HW2/>
-            <HW3/>
-            <HW4/>
-            {/*<HW6/>*/}
-
+            <h3>Pre-junior</h3>
+            <div>
+                Task 1 <br/>
+                <HW1/>
+            </div>
+            <div>
+                Task 2 <br/>
+                <HW2/>
+            </div>
+            <div>
+                Task 3 <br/>
+                <HW3/>
+            </div>
+            <div>
+                Task 4 <br/>
+                <HW4/>
+            </div>
         </div>
     );
 }
