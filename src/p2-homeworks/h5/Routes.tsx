@@ -16,12 +16,11 @@ function Routes() {
     return (
         <Switch>
             <Route exact path="/" render={(props: any) => <Redirect to={PATH.PRE_JUNIOR} />}/>
+            <Route exact path={PATH.PRE_JUNIOR} component={PreJunior}/>
             <Route exact path="/junior" component={Junior}/>
             <Route exact path="/junior_plus" component={JuniorPlus}/>
-            <Route exact path={PATH.PRE_JUNIOR} component={PreJunior}/>
             <Route path='/*' component={Error404}/>
         </Switch>
-
     );
 }
 
