@@ -2,6 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import HW6 from "../../h6/HW6";
 import HW7 from "../../h7/HW7";
+import HW8 from "../../h8/HW8";
 
 
 function Junior() {
@@ -10,12 +11,13 @@ function Junior() {
         <div>
             <h3>Junior</h3>
             <div>
-                Task 6 <br/>
                 <HW6/>
             </div>
             <div>
-                Task 7 <br/>
                 <HW7/>
+            </div>
+            <div>
+                <HW8/>
             </div>
         </div>
     )
