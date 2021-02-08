@@ -1,13 +1,16 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import HW10 from "../../h10/HW10";
 
 
 function JuniorPlus() {
 
     return (
-        <NavLink to='/JUNIOR_PLUS'>
+        <div>
+            <HW10/>
+        </div>
 
-        </NavLink>
+
     )
 
 }

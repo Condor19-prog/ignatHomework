@@ -23,8 +23,6 @@ const HW2 = () => {
         setFilter(value)
     }
 
-
-
     const deleteTask = (nameID: number) => {
         setDefaultData(defaultData.filter(d => d.id !== nameID))
     }
@@ -42,7 +40,7 @@ const HW2 = () => {
     }
 
 
-    const data = dat.map(d => <div><b>name:</b> {d.name} - <b>priority:</b> {d.priority}
+    const data = dat.map(d => <div key={d.id}><b>name:</b> {d.name} - <b>priority:</b> {d.priority}
         <button onClick={() => deleteTask(d.id)}>x</button>
     </div>)
 

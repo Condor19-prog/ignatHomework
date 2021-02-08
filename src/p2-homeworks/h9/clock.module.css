@@ -1,0 +1,21 @@
+.holder {
+    flex-direction: row;
+    /*max-width: 150px;*/
+    justify-content: center;
+}
+
+.time {
+
+    /*border: 1px solid;*/
+
+    cursor: pointer;
+
+}
+
+.date {
+    /*border: 1px solid;*/
+    z-index: 1;
+    /*background-color: wheat;*/
+
+
+}

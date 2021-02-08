@@ -1,0 +1,9 @@
+.link {
+    text-decoration: none;
+}
+.link:focus {
+    text-decoration: underline;
+}
+.link:visited {
+    color: #1d49aa;
+}
