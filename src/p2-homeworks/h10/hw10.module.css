@@ -1,16 +1,16 @@
 .hw10 {
-    margin-top: 50px;
+    margin-top: 20px;
     position: relative;
 }
 
 .header {
-    position: fixed;
-    left: 650px
+
 }
 
 .krutilka {
-    /*position: absolute;*/
-    /*left: 655px;*/
-    /*top: 0;*/
-    /*margin-top: 30px;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
 }
