@@ -17,9 +17,9 @@ export function HW12() {
     return (
         <div className={s[theme]}>
             <hr/>
-            <span className={s[theme + '-text' ] + ' ' + s.span}>
+            <div className={s[theme + '-text' ] + ' ' + s.span}>
                 homeworks 12
-            </span>
+            </div>
             {/*should work (должно работать)*/}
             {/*SuperSelect or SuperRadio*/}
             <SuperSelect options={themes} onChangeOption={onChangeCallback}/>

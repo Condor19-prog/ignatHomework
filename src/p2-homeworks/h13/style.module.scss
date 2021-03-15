@@ -1,0 +1,38 @@
+@mixin style($color,$textShadow, $fontSize,$fontWeight,$webkitAnimation,$animation) {
+  color: $color;
+  text-shadow: $textShadow;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  -webkit-animation: $webkitAnimation;
+  animation: $animation
+}
+
+.error {
+  @include style(rgb(186, 0, 0),
+          0 -1px rgba(0, 0, 0, .1),
+          32px,
+          600,
+          pulsate 1.2s linear infinite,
+          pulsate 1.2s linear infinite);
+  @keyframes pulsate {
+    50% {
+      color: #fff;
+      text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #f03000, 0 0 8px #f80000;
+    }
+  }
+}
+
+.completed {
+  @include style(rgb(0, 0, 0),
+          0 -1px rgba(0, 0, 0, .1),
+          32px,
+          600,
+          pulsate 1.2s linear infinite,
+          pulsate 1.2s linear infinite);
+  @keyframes pulsate {
+    50% {
+      color: #fff;
+      text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px
+    }
+  }
+}
