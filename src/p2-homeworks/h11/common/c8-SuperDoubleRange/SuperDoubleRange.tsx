@@ -19,7 +19,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     const useStyles = makeStyles({
         root: {
             width: 300,
-            marginLeft: 570,
         },
     });
 

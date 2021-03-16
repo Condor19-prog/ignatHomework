@@ -19,7 +19,7 @@ export function HW11() {
         <div className={s.hw11}>
             <hr/>
             homeworks 11
-            <div>
+            <div className={s.range}>
                 <div>
                     Range: {value1}
                 </div>
@@ -29,7 +29,7 @@ export function HW11() {
                     // сделать так чтоб value1 изменялось
                 />
             </div>
-            <div>
+            <div className={s.superDoubleRange}>
                 <span>SuperDoubleRange: {value1}</span>
 
                 {/*не знаю почему нельзя зажав кнопку изменять*/}
