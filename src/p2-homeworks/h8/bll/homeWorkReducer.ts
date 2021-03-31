@@ -15,11 +15,11 @@ export const homeWorkReducer = (state: Array<initialPeopleType>, action: any): a
                         return a.age - b.age
                     })
                 default:
-                    return copyState
-                case "check": {
-                    return copyState.filter(p => p.age > action.payload).sort((a, b) => a.age - b.age)
-                }
                     return state
             }
+        case "check": {
+            return copyState.filter(p => p.age > action.payload).sort((a, b) => a.age - b.age)
+        }
     }
 }
+

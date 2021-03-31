@@ -21,12 +21,13 @@ export const initialPeople = [
 function HW8() {
     const [people, setPeople] = useState(initialPeople);
 
-    const finalPeople = people.map(p => (
-        <div className={s.block} key={p._id}>
-            <div><span>Имя: {p.name}</span></div>
-            <div><span>Возраст: {p.age}</span></div>
-        </div>
-    ))
+    const finalPeople = people.map(p => {
+            return <div className={s.block} key={p._id}>
+                <div><span style={{cursor: 'default'}}>Имя: {p.name}</span></div>
+                <div><span style={{cursor: 'default'}}>Возраст: {p.age}</span></div>
+            </div>
+        }
+    )
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "up"}))
     const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'}))
@@ -47,7 +48,6 @@ function HW8() {
             <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
             <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
             <input type="checkbox" onChange={e => setCheckedPeople(e)}/> check 18
-
         </div>
     );
 }
